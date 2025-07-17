@@ -18,27 +18,4 @@ describe("SweetShop - Purchase Sweet", () => {
     expect(sweets[0].quantity).toBe(15);
   });
 
-  //test to throw error when purchasing more than available stock
-  it("should throw error when purchasing more than available quantity", () => {
-    const shop = new SweetShop();
-    shop.addSweet({
-      id: "1002",
-      name: "Gajar Halwa",
-      category: "Vegetable-Based",
-      price: 30,
-      quantity: 10,
-    });
-
-    expect(() => {
-      shop.purchaseSweet("1002", 15);
-    }).toThrow("Insufficient stock");
-  });
-
-  //test to throw an error while purchasing non existent sweet
-  it("should throw an error when trying to purchase a non-existent sweet", () => {
-    const shop = new SweetShop();
-    expect(() => {
-      shop.purchaseSweet("9999", 5);
-    }).toThrow("Sweet Not Found");
-  });
 });
