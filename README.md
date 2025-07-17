@@ -149,4 +149,4 @@ Some sections (such as sorting logic) were developed with the help of AI tools, 
 ## License
 
 This project is open source and available under the MIT License.
-# sweet-shop-management-system
+
