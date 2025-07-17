@@ -18,4 +18,12 @@ describe("SweetShop - Restock Sweet", () => {
 
     expect(sweet.quantity).toBe(30);
   });
+
+  //test to throw an error while restocking non existent sweet
+  it("should throw an error when trying to restock a non-existent sweet", () => {
+    const shop = new SweetShop();
+    expect(() => {
+      shop.restockSweet("9999", 10);
+    }).toThrow("Sweet Not Found");
+  });
 });
