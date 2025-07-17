@@ -76,7 +76,7 @@ npm install
 ```bash
 npm test
 ```
-<img width="258" height="196" alt="image" src="https://github.com/user-attachments/assets/32a8f948-16a1-4fb4-9403-8c9bbe624240" />
+<img width="258" height="196" alt="image" src="c:\Users\chhavi\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2025-07-17 104705.png" />
 
 
 4. View test coverage report :
