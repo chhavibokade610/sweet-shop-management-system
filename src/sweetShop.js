@@ -62,6 +62,26 @@ class SweetShop {
 
     return sorted;
   }
+
+  //purchase sweet and validating if the required quantity is available or not
+  purchaseSweet(id, quantity) {
+    const sweet = this.sweets.find((s) => s.id === id);
+
+    if (!sweet) {
+      throw new Error("Sweet Not Found");
+    }
+
+    if (sweet.quantity < quantity) {
+      throw new Error("Insufficient stock");
+    }
+
+    sweet.quantity -= quantity;
+
+    return {
+      success: true,
+      remainingQuantity: sweet.quantity,
+    };
+  }
 }
 
 module.exports = SweetShop;
