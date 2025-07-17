@@ -39,6 +39,29 @@ class SweetShop {
       (sweet) => sweet.price >= min && sweet.price <= max
     );
   }
+
+  //sort sweets by name and price
+  sortSweets(field, order) {
+    const sorted = [...this.sweets];
+
+    sorted.sort((a, b) => {
+      if (field === "name") {
+        const aVal = a.name.toLowerCase();
+        const bVal = b.name.toLowerCase();
+        return order === "asc"
+          ? aVal.localeCompare(bVal)
+          : bVal.localeCompare(aVal);
+      } else if (field === "price") {
+        if (order === "desc") {
+          return b.price - a.price;
+        } else {
+          return a.price - b.price;
+        }
+      }
+    });
+
+    return sorted;
+  }
 }
 
 module.exports = SweetShop;
