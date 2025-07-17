@@ -13,6 +13,11 @@ class SweetShop {
   getAllSweets() {
     return this.sweets;
   }
+
+  //deletes a sweet from the shop based on its unique ID.
+  deleteSweet(id) {
+    this.sweets = this.sweets.filter((sweet) => sweet.id !== id);
+  }
 }
 
 module.exports = SweetShop;
