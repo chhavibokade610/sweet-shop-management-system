@@ -132,7 +132,8 @@ To generate this report, run:
 ```bash
 npx jest --coverage
 ```
-<img width="415" height="74" alt="image" src="https://github.com/user-attachments/assets/e924a75c-7823-40c1-85f8-dad9fe2cb597" />
+<img width="481" height="233" alt="image" src="https://github.com/user-attachments/assets/a78af52e-a736-4c78-830e-9846ec397dfa" />
+
 
 ## 4. Test File Structure
 
